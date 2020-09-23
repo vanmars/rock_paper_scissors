@@ -2,6 +2,9 @@ class RPS
   def initialize()
     @option = ["rock", "paper", "scissors"]
     @playermove
+    @wins = 0
+    @losses = 0
+    @ties = 0
   end
 
   def computerMove()
@@ -19,12 +22,18 @@ class RPS
     player = @playermove
 
     if (player == "rock" && computer == "scissors") || (player == "paper" && computer == "rock") || (player == "scissors" && computer == "paper")
+      @wins += 1
       print ("Computer chose #{computer}. You chose #{player}. How wonderful, you win!\n")
+      print ("Total wins: #{@wins} Total ties: #{@ties} Total losses: #{@losses}\n")
       return true
     elsif computer = player
+      @ties += 1
       print ("Computer chose #{computer}. You chose #{player}. Tie! Try again!\n")
+      print ("Total wins: #{@wins} Total ties: #{@ties} Total losses: #{@losses}\n")
     else
+      @losses += 1
       print ("Computer chose #{computer}. You chose #{player}. Bummer! You lose!\n")
+      print ("Total wins: #{@wins} Total ties: #{@ties} Total losses: #{@losses}\n")
       return false
     end
   end
