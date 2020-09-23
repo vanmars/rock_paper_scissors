@@ -13,14 +13,16 @@ class RPS
     @playermove = gets.chomp.downcase()
   end
 
-  def wins?(player, computer)
-    # playerMove()
-    # computer = computerMove()
-    # player = @playermove
+  def wins?()
+    playerMove()
+    computer = computerMove()
+    player = @playermove
 
     if (player == "rock" && computer == "scissors") || (player == "paper" && computer == "rock") || (player == "scissors" && computer == "paper")
+      print ("Computer chose #{computer}. You chose #{player}. How wonderful, you win!\n")
       return true
     else
+      print ("Computer chose #{computer}. You chose #{player}. Bummer! You lose!\n")
       return false
     end
   end
