@@ -9,7 +9,7 @@ describe('#RPS') do
   
   it("returns false if rock is the object and rock is the argument") do
     game = RPS.new()
-    expect(game.wins?("rock", "rock")).to(eq(true))
+    expect(game.wins?("rock", "rock")).to(eq(false))
   end
   
   it("returns false if scissors is the object and rock is the argument") do
