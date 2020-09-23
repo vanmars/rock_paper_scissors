@@ -1,1 +1,10 @@
 require('rspec')
+require('rock_paper_scissors')
+
+describe('#RPS') do
+  it("returns true if rock is the object and scissors is the argument") do
+    game = RPS.new()
+    expect(game.wins?("rock", "paper")).to(eq(true))
+  end
+end
+
