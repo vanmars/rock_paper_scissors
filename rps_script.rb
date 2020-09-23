@@ -11,5 +11,5 @@ puts "******************************************************\n"
 game = RPS.new()
 
 # game.wins?
-game.wins?() 
+game.play_game() 
 
