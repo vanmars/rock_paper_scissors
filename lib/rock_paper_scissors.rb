@@ -30,10 +30,11 @@ class RPS
   end
 
   def play_game()
-    wins?()
-    puts "Would you like to play again(Y/N)?"
-    response = gets.chomp.downcase()
-    response == "y" ? wins?() : return
+    response = "y"
+    while (response == "y") do
+      wins?()
+      puts "Would you like to play again(Y/N)?"
+      response = gets.chomp.downcase()
+    end
   end
-
 end
