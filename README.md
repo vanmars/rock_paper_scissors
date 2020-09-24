@@ -4,7 +4,7 @@ _September 23, 2020_
 
 #### _An application that plays the classic game Rock, Paper, Scissors. A study in TDD with Ruby._
 
-#### By _**Vanessa Sterwart & Donny Mays**_
+#### By _**Vanessa Stewart & Donny Mays**_
 
 ## Description
 
