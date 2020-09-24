@@ -26,7 +26,7 @@ class RPS
       print ("Computer chose #{computer}. You chose #{player}. How wonderful, you win!\n")
       print ("Total wins: #{@wins} Total ties: #{@ties} Total losses: #{@losses}\n")
       return true
-    elsif computer = player
+    elsif computer == player
       @ties += 1
       print ("Computer chose #{computer}. You chose #{player}. Tie! Try again!\n")
       print ("Total wins: #{@wins} Total ties: #{@ties} Total losses: #{@losses}\n")
